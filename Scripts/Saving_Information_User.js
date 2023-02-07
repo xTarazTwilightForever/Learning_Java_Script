@@ -1,5 +1,5 @@
 "use strict";
-
+function saving_Information_User(){
 let numberOfFilms = prompt("How many movies have you watched?", "");
 
 const personalMovieDB = {
@@ -15,3 +15,4 @@ let lastUserMovie = prompt("One of the last watched movies?", ""),
 personalMovieDB.movies[lastUserMovie] = filmUserScore;
 
 console.log(personalMovieDB);
+}
