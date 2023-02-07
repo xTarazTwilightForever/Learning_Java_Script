@@ -1,13 +1,17 @@
 "use strict";
 
-let nameUser = prompt("Hello, what's your name?", "");
+let numberOfFilms = prompt("How many movies have you watched?", "");
 
-alert(`Hello ${nameUser}, good afternoon.`);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    private: false
+};
 
-let ageUser = prompt("How old are you?", "");
+let lastUserMovie = prompt("One of the last watched movies?", ""),
+    filmUserScore = prompt("How much do you rate it?", "");
+personalMovieDB.movies[lastUserMovie] = filmUserScore;
 
-if (ageUser >= 18) {
-    alert(`${nameUser} welcome to the website!`);
-} else {
-    alert("You are denied access!")
-}
+console.log(personalMovieDB);
