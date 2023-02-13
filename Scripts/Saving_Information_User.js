@@ -2,7 +2,7 @@
 
 function saving_Information_User() {
     let userWatchMovies = true;
-    let numberOfFilms = prompt("How many movies have you watched?", "");
+    let numberOfFilms = +prompt("How many movies have you watched?", "");
 
     const personalMovieDB = {
         count: numberOfFilms,
@@ -30,7 +30,8 @@ function saving_Information_User() {
             const lastUserMovie = prompt("One of the last watched movies?", ""),
                 filmUserScore = prompt("How much do you rate it?", "");
 
-            if (lastUserMovie != null && filmUserScore != null && lastUserMovie != '' && filmUserScore != '' && lastUserMovie.length < 50) {
+            if (lastUserMovie != null && filmUserScore != null && lastUserMovie != '' &&
+                filmUserScore != '' && lastUserMovie.length < 50) {
                 personalMovieDB.movies[lastUserMovie] = filmUserScore;
                 console.log(personalMovieDB);
                 console.log("Done!");
