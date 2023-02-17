@@ -1,0 +1,1 @@
+document.write("Scenario loaded from a file");
