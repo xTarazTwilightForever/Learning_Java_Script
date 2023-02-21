@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing 2.3</title>
+</head>
+<body>
+    <h3>Listing 2.3</h3>
+    <hr>
+    
+    <script>
+        let command=window.prompt("Enter action", "");
+
+        if (command==null) {
+            document.write('Cancel button is pressed ');
+        }
+
+        else {
+            switch (parseInt(command)) {
+                case 1:
+                    alert("Action 1 is selected ");
+                break;
+                case 2:
+                    alert("Action 2 is selected ");
+                break;
+                case 3:
+                    alert("Action 3 is selected ");
+                break;
+                case 4:
+                    alert("Action 4 is selected ");
+                break;
+                default: 
+                alert('None!');
+            }
+        }
+    </script>
+</body>
+</html>

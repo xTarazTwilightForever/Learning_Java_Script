@@ -154,7 +154,7 @@ table {
 	text-align: left;
 	border-collapse: collapse;
 	border-radius: 20px;
-	box-shadow: 0 0 0 10px #F2906B;
+	box-shadow: 0 0 0 10px #263773;
 	color: #452F21;
 }
 
@@ -173,7 +173,7 @@ table th:last-child {
 
 td {
 	text-align: center;
-	border-top: 10px solid #F2906B;
+	border-top: 10px solid #263773;
 	padding: 8px;
 	background: white;
 }
