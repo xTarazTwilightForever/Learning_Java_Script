@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash_Register</title>
+</head>
+<body>
+    <h2>Cash_Register</h2> 
+    <script>
+        function checkCashRegister(price, cash, cid) {
+    let conclusion = { status: null, change: [] };
+    let initialValues = [
+        ["ONE HUNDRED", 10000],
+        ["TWENTY", 2000],
+        ["TEN", 1000],
+        ["FIVE", 500],
+        ["ONE", 100],
+        ["QUARTER", 25],
+        ["DIME", 10],
+        ["NICKEL", 5],
+        ["PENNY", 1]
+    ];
+    let register = cid.reduce((acc, curr) => {
+        acc[curr[0]] = Math.round(curr[1] * 100);
+        acc.total += acc[curr[0]];
+        return acc;
+    }, { total: 0 });
+    let change = Math.round((cash - price) * 100);
+    if (change == register.total) {
+        conclusion.status = 'CLOSED';
+        conclusion.change = cid;
+        return conclusion;
+    }
+    if (change > register.total) {
+        conclusion.status = 'INSUFFICIENT_FUNDS';
+        return conclusion;
+    }
+    let arr = [];
+    for (let item of initialValues) {
+        let value = 0;
+        while (register[item[0]] > 0 && change >= item[1]) {
+            change -= item[1];
+            register[item[0]] -= item[1];
+            value += item[1];
+        }
+        if (value > 0) {
+            arr.push([item[0], value / 100]);
+        }
+    }
+    if (change > 0) {
+        conclusion.status = 'INSUFFICIENT_FUNDS';
+        return conclusion;
+    }
+    conclusion.status = 'OPEN';
+    conclusion.change = arr;
+    return conclusion;
+}
+
+checkCashRegister(19.5, 20, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
+    </script>
+   
+</body>
+</html>
