@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing 9.2</title>
+</head>
+
+<body>
+    <h3>Listing 9.2</h3>
+    <hr>
+       <dialog id="favDialog">
+        <form method="dialog">
+            <p><label>Favorite make of car:
+                <select>
+                    <option></option>
+                    <option>Audi</option>
+                    <option>BMW</option>
+                    <option>Opel</option>
+                </select>
+            </label></p>
+            <menu>
+                <button value="cancel">Сancel</button>
+                <button id="confirmBtn" value="default">Select</button>
+            </menu>
+        </form>
+       </dialog>
+
+       <menu>
+            <button id="chooseCar"> Select car</button>
+       </menu>
+
+       <output aria-live="polite"></output>
+
+       <script>
+        let chooseButton = document.getElementById('chooseCar');
+        let favDialog = document.getElementById('favDialog');
+        let outputBox = document.querySelector('output');
+        let selectEl = document.querySelector('select');
+        let confirmBtn = document.getElementById('confirmBtn');
+
+        chooseButton.addEventListener('click', function onOpen() {
+            if (typeof favDialog.showModal === "function") {
+                favDialog.showModal();
+            } else {
+                alert("Tag <dialog> is not supported by the browser.");
+            }
+        });
+
+        selectEl.addEventListener('change', function onSelect(e) {
+            confirmBtn.value = selectEl.value;
+        });
+
+        favDialog.addEventListener('close', function onClose(){
+            outputBox.value = favDialog.returnValue + " selected -" + (new Date() ) .toString();
+        });
+       </script>
+       
+</body>
+</html>
