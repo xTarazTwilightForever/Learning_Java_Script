@@ -4,12 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listing 9.1</title>
+    <title>Listing 9.3</title>
+    <script>
+        let clock;
+
+        function Timerstart() {
+            clock = setInterval("DisplayTime() ;", 1000);
+        }
+
+        function DisplayTime() {
+            let d = new Date();
+            let CurrTime = (d.getHours() < 10) ? "0" : "";
+            CurrTime += d.getHours();
+            CurrTime += (d.getMinutes() < 10) ? ":0" : ":";
+            CurrTime += d.getMinutes();
+            CurrTime += (d.getSeconds() < 10) ? ":0" : ":";
+            CurrTime += d.getSeconds();
+            document.getElementById("div1").innerHTML = CurrTime;
+        }
+        function Timerstop() {
+            clearInterval(clock);
+        }
+
+    </script>
 </head>
 
 <body>
-    <h3>Listing 9.1</h3>
+    <h3>Listing 9.3</h3>
     <hr>
-        <input type="button" onclick="newwopen() ;" value="Open window">
+        <div id="div1"></div>
+
+        <input type="button" value="Start" onclick="Timerstart();">
+        <input type="button" value="Stop" onclick="Timerstop();">
 </body>
 </html>
