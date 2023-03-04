@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing 11.11</title>
+    <script>
+       
+    </script>
+</head>
+
+<body>
+    <h3>Listing 11.11</h3>
+    <hr>
+        <p>You have pet?</p>
+        <input type="radio" name="pet" value="Spooky" checked="checked">Spooky
+        <input type="radio" name="pet" value="dog" />Doggy
+        <input type="radio" name="pet" value="other" />Other
+        <button id="button1">Result!</button>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $(function (){
+            $("#button1").click(function(){
+            let value = $("input:radio[name=pet]:checked").val();
+            window.alert(value);
+            });
+        });
+    </script>
+</body>
+</html>
