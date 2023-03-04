@@ -1,0 +1,35 @@
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing 11.22</title>
+</head>
+
+<body>
+    <h3>Listing 11.22</h3>
+    <hr>
+       <a href="http://google.com">Google</a>
+       <a href="http://google.com">Discovery</a>
+       <a href="http://google.com">Nit.center</a>
+       <a href="http://google.com">Booking</a>
+       <a href="http://google.com">TripAdvisor</a>
+       <a href="http://google.com">Live</a>
+      <button id="b1">Method Wrap</button>
+      <button id="b2">Method Unwrap</button>
+
+      <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $(function () {
+          $("#b1").click(function(){
+            $("a").wrapInner("<i></i>").wrap("<li></li>");
+            $("li").wrapAll("<ol></ol>")
+          });    
+          $("#b2").click(function() {
+            $("a").unwrap();
+          });
+        });
+    </script>
+</body>
+</html>
