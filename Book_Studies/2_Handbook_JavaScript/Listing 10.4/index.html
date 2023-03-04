@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing 10.4</title>
+    <script>
+        function validateEmail(email) {
+            let re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        }
+
+        function check() {
+            let email = document.form1.email.value;
+            if(validateEmail(email)) document.getElementById("span1").innerText = "OK";
+            else document.getElementById("span1").innerText = "Email Eror";
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Listing 10.4</h3>
+    <hr>
+    <form name="form1"> E-mail: <input type="text" name="email" id="email" onkeydown="check();"></form>
+
+    <span id="span1"></span>
+</body>
+</html>
