@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing 11.8</title>
+    <script>
+       
+    </script>
+</head>
+
+<body>
+    <h3>Listing 11.8</h3>
+    <hr>
+       <style>
+        div {
+            border: 2px solid red;
+        }
+        .cl1 {
+            background-color: green;
+            color: white;
+        }
+       </style>
+
+       <div>Block 1</div>
+       <div>Block 2</div>
+       <div>Block 3</div>
+       <button id="button1">Add Class</button>
+       <button id="button2">Delete class</button>
+       <button id="button3">Toggle class</button>
+       <button id="button4">Check the class</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $ (function() {
+            $("#button1").click(function(){
+                $("div").addClass("cl1");
+            });
+            
+            $("#button2").click(function(){
+                $("div").removeClass("cl1");
+            });
+
+            $("#button3").click(function(){
+                $("div").toggleClass("cl1");
+            });
+            $("#button4").click(function(){
+                alert($("div:last").hasClass("cl1"));
+            });
+        });
+    </script>
+</body>
+</html>
