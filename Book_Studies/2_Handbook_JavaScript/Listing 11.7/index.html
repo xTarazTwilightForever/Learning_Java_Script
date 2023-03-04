@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing 11.7</title>
+    <script>
+       
+    </script>
+</head>
+
+<body>
+    <h3>Listing 11.7</h3>
+    <hr>
+        <a href="http://gmail.com" target="_blank">Example change link</a>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $ (function(){
+            let href = $("a").attr("href");
+            alert("Current address:" + href + "\New address: http://nit.center");
+                $("a").attr("href", "http://nit.center");
+        });
+    </script>
+</body>
+</html>
