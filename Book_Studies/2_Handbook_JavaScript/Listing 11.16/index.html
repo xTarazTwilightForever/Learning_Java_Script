@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing 11.16</title>
+</head>
+
+<body>
+    <style>
+        div {
+            position: relative;
+            background-color: #000;
+            left: 70px;
+            top: 70px;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+    </style>
+    <h3>Listing 11.16</h3>
+    <hr>
+    <button id="left">Left</button>
+    <button id="right">Right</button>
+    <button id="up">Up</button>
+    <button id="down">Down</button>
+    
+    <div class="block"></div>
+          <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $(function () {
+           $("#right").click(function() {
+            $(".block").animate({"left": "+=50px"}, "slow");
+           });
+           $("#left").click(function() {
+            $(".block").animate({"left": "-=50px"}, "slow");
+           });
+           $("#down").click(function() {
+            $(".block").animate({"top": "+=50px"}, "slow");
+           });
+           $("#up").click(function() {
+            $(".block").animate({"top": "-=50px"}, "slow");
+           });
+        });
+    </script>
+</body>
+</html>
