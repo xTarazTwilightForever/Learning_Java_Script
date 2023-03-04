@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing 11.14</title>
+</head>
+
+<body>
+    <style>
+        div {
+            border: 1px dotted #369;
+            padding: 5px;
+            color: blue;
+        }
+    </style>
+    <h3>Listing 11.14</h3>
+    <hr>
+       <button id="show">Show</button>
+       <button id="hide">Hide</button>
+       <button id="toggle">Toggle</button>
+       <p><div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime laudantium sunt recusandae possimus cum. Atque voluptatem praesentium, quibusdam quas cumque id nemo! Quibusdam nesciunt doloribus, laborum natus accusamus incidunt minus!</div></p>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $(function () {
+            $("#show").click(function() {
+                $("div").fadeIn(1500);
+            });
+            $("#hide").click(function() {
+                $("div").fadeOut(1500);
+            });
+            $("#toggle").click(function() {
+                $("div").fadeToggle(1500);
+            });
+        });
+    </script>
+</body>
+</html>
