@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listing 11.12</title>
+    <title>Listing 11.13</title>
 </head>
 
 <body>
-    <h3>Listing 11.12</h3>
+    <style>
+        div {
+            border: 1px dotted #369;
+            padding: 5px;
+            color: blue;
+        }
+    </style>
+    <h3>Listing 11.13</h3>
     <hr>
        <button id="show">Show</button>
        <button id="hide">Hide</button>
@@ -18,13 +25,13 @@
     <script>
         $(function () {
             $("#show").click(function() {
-                $("div").show();
+                $("div").slideUp(1500);
             });
             $("#hide").click(function() {
-                $("div").hide();
+                $("div").slideDown(1500);
             });
             $("#toggle").click(function() {
-                $("div").toggle();
+                $("div").slideToggle(1500);
             });
         });
     </script>
