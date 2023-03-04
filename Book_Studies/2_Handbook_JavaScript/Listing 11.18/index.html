@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing 11.18</title>
+</head>
+
+<body>
+    <style>
+        div {
+            width: 300px;
+            height: 150px;
+            border: 1px dotted #000;
+            overflow: hidden;
+        }
+        button {
+            width: 180px;
+        }
+    </style>
+    <h3>Listing 11.18</h3>
+    <hr>
+        <button>Get width</button>
+        <button>Get height</button>
+        <button>Get innerWidth</button>
+        <button>Get InnerHeight</button>
+        <button>Get outerWidth</button>
+        <button>Get outerHeight</button>    
+        <br /><br />
+        <input type="text" />
+        <button>Set width</button>
+        <button>Set height</button>
+
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, modi reprehenderit facere placeat natus velit dignissimos provident dicta autem totam ea doloremque quos quod dolorum ratione molestias ut sunt aspernatur!</div>
+          <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $(function () {
+          $("button:eq(0)").click(function() {
+            $("input").val($("div").width());
+          });
+          $("button:eq(1)").click(function() {
+            $("input").val($("div").height());
+          });
+          $("button:eq(2)").click(function() {
+            $("input").val($("div").innerWidth());
+          });
+          $("button:eq(3)").click(function() {
+            $("input").val($("div").innerHeight());
+          });
+          $("button:eq(4)").click(function() {
+            $("input").val($("div").outerWidth());
+          });
+          $("button:eq(5)").click(function() {
+            $("input").val($("div").outerHeight());
+          });
+          $("button:eq(6)").click(function() {
+            $("div").width($("input").val()*1);
+          });
+          $("button:eq(7)").click(function() {
+            $("div").height($("input").val()*1);
+          });
+        });
+    </script>
+</body>
+</html>
