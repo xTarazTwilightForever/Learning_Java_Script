@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing 10.1</title>
+</head>
+
+<body>
+    <h3>Listing 10.1</h3>
+    <hr>
+    <script>
+        function AddWord() {
+            let text1 = document.form1.text1.value;
+
+            if(text1 == "") {window.alert('Input text');
+            return "";
+        };
+
+        let tal = document.form1.tal.value;
+        let result = tal + "\n" + text1;
+
+        document.form1.tal.value = result;
+
+        document.form1.text1.value = "";
+        return text1;
+        }
+    </script>
+
+    <form name="form1">
+        Word <input type="text" name="text1" id="text1"><br />
+        <textarea name="tal" id="tal" cols="30" rows="10"></textarea> <br />
+        
+        <input type="button" value="Add in node" onclick="AddWord();"> <br />
+    </form>
+</body>
+</html>
