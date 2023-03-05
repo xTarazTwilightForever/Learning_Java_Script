@@ -17,6 +17,25 @@ img {
 	padding: 20px;
 }
 
+.React {
+	background-color: #0c1224;
+	margin-top: 15px;
+}
+
+b {
+	font-size: 35px;
+}
+
+.bookPage{
+	color: red;
+	
+}
+
+.totalBookPage{
+	color: #d19fe3;
+	font-size: 28px;
+}
+
 .buttonPadding {
 	padding: 20px;
 }
@@ -27,6 +46,10 @@ img {
 	gap: 1rem;
 	align-items: center;
 	justify-content: center;
+}
+.Done {
+	background-color: rgb(0, 50, 0);
+	margin-top: 15px;
 }
 
 h2 {
