@@ -11,12 +11,34 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-   
+   <style>
+    #container {
+        padding: 50px;
+        background-color: #FFF;
+    }
+   </style>
 
 
     <div id="container"></div>
     <script type="text/babel">
-        
+        let destination = document.querySelector("#container");
+
+        class Latter extends React.Component {
+            render() {
+                return (
+                    <div>
+                        {this.props.children}    
+                    </div>
+                );
+            }
+        }
+
+        ReactDOM.render {
+            <div>
+                <Latter></Latter>
+                
+            </div>
+        }
     </script>
 </body>
 </html>
