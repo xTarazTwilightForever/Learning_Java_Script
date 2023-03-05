@@ -54,8 +54,8 @@
 			</tr>
 			<tr style="color:#263773;">
 				<td>Learning React: A Hands-On Guide to Building Web Applications Using React and Redux</td>
-				<td>20</td>
-				<td>365</td>
+				<td class="bookPages">34</td>
+				<td class="totalBookPages">365</td>
 				<td>In progress...</td>
 			</tr>
 			<tr style="color:#263773;">
@@ -124,6 +124,7 @@
 			</a>
 		</div>
 	</div>
+	<div class="Done">
 	<h4>2) Handbook JavaScript: </h4> <img src="https://careerbox.ru/upload/photos/2021/10/gNbyJYTi8VN2TqarUJTj_25_69888e5f8263b8f879b1fef63bfa2a8a_image.jpg" alt="Failed">
 	<div class="buttonStyle">
 		<a href="Book_Studies/2_Handbook_JavaScript\Listing 1.1/index.html">
@@ -288,6 +289,7 @@
 			</a>	
 		</div>
 	</div>
+
 			<div class="buttonPadding">
 				<div class="buttonStyle">
 					<a href="Book_Studies/2_Handbook_JavaScript\Listing 11.16/index.html">
@@ -319,12 +321,80 @@
 					</a>
 				</div>
 			</div>
-	<h4>3) Learning React: A Hands-On Guide to Building Web Applications Using React and Redux book:</h4> <img src="image/React.jpg" alt="Failed">
-
+		</div>
+			<div class="React">
+			<h3>Study of the React:</h3>
+			<h4>What page of the book I am on: <span class="bookPage"></span><b>/</b><span class="totalBookPage"></span> page.</h4>
+			
+	<h4>3) Learning React: A Hands-On Guide to Building Web Applications Using React and Redux:</h4> <img src="image/React.jpg" alt="Failed">
+	<div class="buttonPadding">
+		<div class="buttonStyle">
+			<a href="Book_Studies/3_Learning_React_A_Hands-On_Guide/First_Application/index.html">
+				<button style="--clr:#7FFF00"><span>First_Application</span><i></i></button>
+			</a>
+		</div>
+	</div>
+	<center>
+		<h4>Progress FreeСodeСamp:</h4>
+		<h4>Front End Development Libraries</h4>
+		<h4></h4>
+		<table>
+			<tr>
+				<th>Course Title:</th>
+				<th>Where I am now:</th>
+				<th>How many lessons:</th>
+				<th>Progress of execution:</th>
+			</tr>
+			<tr style="color:#ed438a;">
+				<td>Bootstrap</td>
+				<td>0</td>
+				<td>31</td>
+				<td>Not started!</td>
+			</tr>
+			<tr style="color:#ed438a;">
+				<td>jQuery</td>
+				<td>0</td>
+				<td>18</td>
+				<td>Not started!</td>
+			</tr>
+			<tr style="color:#ed438a;">
+				<td>SASS</td>
+				<td>0</td>
+				<td>9</td>
+				<td>Not started!</td>
+			</tr>
+			<tr style="color:#ed438a;">
+				<td>React</td>
+				<td>0</td>
+				<td>47</td>
+				<td>Not started!</td>
+			</tr>
+			<tr style="color:#ed438a;">
+				<td>Redux</td>
+				<td>0</td>
+				<td>17</td>
+				<td>Not started!</td>
+			</tr>
+			<tr style="color:#ed438a;">
+				<td>React and Redux</td>
+				<td>0</td>
+				<td>10</td>
+				<td>Not started!</td>
+			</tr>
+			<tr style="color:#ed438a;">
+				<td>Front End Development Libraries Projects</td>
+				<td>0</td>
+				<td>5</td>
+				<td>Not started!</td>
+			</tr>
+		</table>
+		<h4></h4> </center>
+</div>
 	<!--Prepa#ed438a colors:-->
 	<!--/--clr:#FF3131/--clr:#39FF14/--clr:#FF5E00/--clr:#7FFF00/--clr:#FFF01F/--clr:#EA00FF/--clr:#1F51FF/--clr:#FF44CC/--clr:#BC13FE/--clr:#0FF0FC/--clr:#E7EE4F/--clr:#8A2BE2/--clr:#FF1493/--clr:#CCFF00/-->
+	<div class="Done">
 	<center>
-		<h4>Progress FreeСodeСamp so far:</h4>
+		<h4>Progress FreeСodeСamp:</h4>
 		<h4>JavaScript Algorithms and Data Structures</h4>
 		<h4></h4>
 		<table>
@@ -416,6 +486,8 @@
 			</a>
 		</div>
 	</div>
+</div> 
+	<div class="Done">
 	<center>
 		<h4>Responsive Web Design</h4>
 		<h4></h4>
@@ -518,6 +590,7 @@
 			</tr>
 		</table>
 		<h4></h4> </center>
+
 	<div class="buttonPadding">
 		<div class="buttonStyle">
 			<a href="FreeCodeCamp\Responsive_Web_Design\Learn_HTML_by_Building_a_Cat_Photo_App\index.html">
@@ -604,6 +677,7 @@
 			</a>
 		</div>
 	</div>
+</div>
 	<center>
 		<h4>Progress of the Russian paid course from "Udemy":</h4>
 		<h4></h4>
@@ -660,7 +734,10 @@
 		</div>
 	</div>
 	<script src="Scripts/Saving_Information_User.js"></script>
-	<script src="Scripts/App.js"></script>
+	<script>
+		document.querySelector('.bookPage').textContent = document.querySelector('.bookPages').textContent;
+		document.querySelector('.totalBookPage').textContent = document.querySelector('.totalBookPages').textContent;
+	</script>
 </body>
 
 </html>
