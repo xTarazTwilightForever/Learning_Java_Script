@@ -82,7 +82,97 @@ function displayButtons(num) {
         link: "FreeCodeCamp/Responsive_Web_Design/Learn_CSS_Grid_by_Building_a_Magazine/Index.html",
         style: "--clr:#7d58a0",
         text: "Learn CSS Grid by Building a Magazine"
+      },  
+      {
+        num: 14,
+        link: "FreeCodeCamp/Responsive_Web_Design/Learn_CSS_Animation_by_Building_a_Ferris_Wheel/index.html",
+        style: "--clr:#1F51FF",
+        text: "Learn CSS Animation by Building a Ferris Wheel"
       },
+      {
+        num: 15,
+        link: "FreeCodeCamp/Responsive_Web_Design/Learn_CSS_Transforms_by_Building_a_Penguin/index.html",
+        style: "--clr:#a46554",
+        text: "Learn CSS Transforms by Building a Penguin"
+      }, 
+      {
+        num: 16,
+        link: "FreeCodeCamp/Responsive_Web_Design/Survey_Form/index.html",
+        style: "--clr:#0dff9f",
+        text: "Survey Form"
+      },
+      {
+        num: 17,
+        link: "FreeCodeCamp/Responsive_Web_Design/Tribute_Page/index.html",
+        style: "--clr:#ed438a",
+        text: "Tribute Page"
+      },
+      {
+        num: 18,
+        link: "FreeCodeCamp/Responsive_Web_Design/Technical_Documentation_Page/index.html",
+        style: "--clr:#263773",
+        text: "Technical Documentation Page"
+      },
+      {
+        num: 19,
+        link: "FreeCodeCamp/Responsive_Web_Design/Product_Landing_Page/index.html",
+        style: "--clr:#BC13FE",
+        text: "Product Landing Page"
+      },
+      {
+        num: 20,
+        link: "FreeCodeCamp/Responsive_Web_Design/Personal_Portfolio_Webpage/index.html",
+        style: "--clr:#5f7170",
+        text: "Personal Portfolio Webpage"
+      }, 
+      {
+        num: 21,
+        link: "FreeCodeCamp/JavaScript_Algorithms_and_Data_Structures/Palindrome_Checker/index.html",
+        style: "--clr:#0dff9f",
+        text: "Palindrome Checker"
+      },
+      {
+        num: 22,
+        link: "FreeCodeCamp/JavaScript_Algorithms_and_Data_Structures/Roman_Numeral_Converter/index.html",
+        style: "--clr:#d19fe3",
+        text: "Roman Numeral Converter"
+      },
+      {
+        num: 23,
+        link: "FreeCodeCamp/JavaScript_Algorithms_and_Data_Structures/Caesars_Cipher/index.html",
+        style: "--clr:#263773",
+        text: "Caesars Cipher"
+      },
+      {
+        num: 24,
+        link: "FreeCodeCamp/JavaScript_Algorithms_and_Data_Structures/Telephone_Number_Validator/index.html",
+        style: "--clr:#FF5E00",
+        text: "Telephone Number Validator"
+      },
+      {
+        num: 25,
+        link: "FreeCodeCamp/JavaScript_Algorithms_and_Data_Structures/Cash_Register/index.html",
+        style: "--clr:#ffff",
+        text: "Cash Register"
+      },
+      {    
+      num: 26,
+      link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/First_Application/index.html",
+      style: "--clr:#7FFF00",
+      text: "First_Application"
+    },
+    {
+      num: 27,
+      link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/Components_React/index.html",
+      style: "--clr:#FF5E00",
+      text: "Components React"
+    },
+    {
+      num: 28,
+      link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/Styles_in_React/index.html",
+      style: "--clr:#FF5E00",
+      text: "Styles in React"
+    },
     ];
   
     let buttonsHTML = '';

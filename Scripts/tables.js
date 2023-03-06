@@ -43,6 +43,51 @@
 		}
 	];
 
+  let BooksReading = [
+		{
+			title: "Eksmo JavaScript in Examples and Tasks",
+			whereNow: 116,
+			howMany: 718,
+			progress: "Stoped! I have to start studying React, within two days, the book slows me down, I'll get back to it in a month."
+		},
+		{
+			title: "Science and Technology JavaScript Handbook. Short, fast, at your fingertips",
+			whereNow: 303,
+			howMany: 303,
+			progress: "Done!"
+		},
+		{
+			title: "Publisher Science and Technology Git. A Practical Guide",
+			whereNow: 30,
+			howMany: 289,
+			progress: "In progress..."
+		},
+		{
+			title: "Science and Technology Publishing C# for UNITY Developers",
+			whereNow: 0,
+			howMany: 366,
+			progress: "Not started!"
+		},
+		{
+			title: "Grokking algorithms",
+			whereNow: 0,
+			howMany: 287,
+			progress: "Not started!"
+		},
+		{
+			title: "Learning React: A Hands-On Guide to Building Web Applications Using React and Redux",
+			whereNow: 86,
+			howMany: 365,
+			progress: "In progress..."
+		},
+		{
+			title: "English, a large self-explanatory self-study",
+			whereNow: 18,
+			howMany: 382,
+			progress: "In progress..."
+		}
+	];
+
     let ProgressReactJSfromZerotoPro = [
 		{
             title: "Theory. What is React",
@@ -141,6 +186,45 @@
             progress: "Not started!"
         }
 	];
+  
+let JavaScriptSections = [
+  {
+    title: "Fundamentals of JavaScript",
+    whereNow: 35,
+    howMany: 35,
+    progress: "In progress..."
+  },
+  {
+    title: "JavaScript at work",
+    whereNow: 14,
+    howMany: 14,
+    progress: "Done!"
+  },
+  {
+    title: "Advanced JavaScript",
+    whereNow: 33,
+    howMany: 33,
+    progress: "Done!"
+  },
+  {
+    title: "React Library. Basic Level",
+    whereNow: 0,
+    howMany: 13,
+    progress: "In progress..."
+  },
+  {
+    title: "React Library. Intermediate Level",
+    whereNow: 0,
+    howMany: 9,
+    progress: "In progress..."
+  },
+  {
+    title: "React + Redux",
+    whereNow: 0,
+    howMany: 10,
+    progress: "Not started!"
+  }
+];
     
     let JavaScriptAlgorithmsandDataStructures = [
         {
