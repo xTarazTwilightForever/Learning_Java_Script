@@ -170,9 +170,15 @@ function displayButtons(num) {
     {
       num: 28,
       link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/Styles_in_React/index.html",
-      style: "--clr:#FF5E00",
+      style: "--clr:#47cc0e",
       text: "Styles in React"
     },
+    {
+      num: 29,
+      link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/Color_Palette_Card/index.html",
+      style: "--clr:#87a3a0",
+      text: "Styles in React"
+    }
     ];
   
     let buttonsHTML = '';
