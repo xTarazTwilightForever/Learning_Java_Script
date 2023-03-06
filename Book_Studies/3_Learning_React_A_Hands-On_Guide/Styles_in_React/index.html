@@ -21,24 +21,40 @@
 
     <div id="container"></div>
     <script type="text/babel">
-        let destination = document.querySelector("#container");
+      let destination = document.querySelector("#container");
 
-        class Latter extends React.Component {
+        class Letter extends React.Component {
             render() {
+                let letterStyle = {
+                    padding: 10,
+                    margin: 10,
+                    backgroundColor: this.props.bgcolor,
+                    color: "#333",
+                    display: "inline-block",
+                    fontFamily: "monospace",
+                    fontSize: 32,
+                    textAlign: "center"
+                };
+
                 return (
-                    <div>
+                    <div style={letterStyle}>
                         {this.props.children}    
                     </div>
                 );
             }
         }
 
-        ReactDOM.render {
+        ReactDOM.render (
             <div>
-                <Latter></Latter>
-                
-            </div>
-        }
+                <Letter bgcolor="#58B3FF">S</Letter>
+                <Letter bgcolor="#FF605F">P</Letter>
+                <Letter bgcolor="#FFD52E">O</Letter>
+                <Letter bgcolor="#49DD8E">O</Letter>
+                <Letter bgcolor="#AE99FF">K</Letter>
+                <Letter bgcolor="#18B3FF">Y</Letter>
+            </div>,
+            destination
+        );
     </script>
 </body>
 </html>
