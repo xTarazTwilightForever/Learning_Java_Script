@@ -164,7 +164,7 @@ function displayButtons(num) {
     {
       num: 27,
       link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/Components_React/index.html",
-      style: "--clr:#FF5E00",
+      style: "--clr:#FFFFFF",
       text: "Components React"
     },
     {
@@ -177,7 +177,13 @@ function displayButtons(num) {
       num: 29,
       link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/Color_Palette_Card/index.html",
       style: "--clr:#87a3a0",
-      text: "Styles in React"
+      text: "Color Palette Card"
+    } ,
+    {
+      num: 30,
+      link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/Lightning_Counter/index.html",
+      style: "--clr:#FF5E00",
+      text: "Lightning Counter"
     }
     ];
   
