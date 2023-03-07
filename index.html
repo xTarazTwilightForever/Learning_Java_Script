@@ -135,10 +135,10 @@
 		<h4>3) Learning React: A Hands-On Guide to Building Web Applications Using React and Redux:</h4>
 			<script>
 				let LearningReactData = BooksReading.find(book => book.title === "Learning React: A Hands-On Guide to Building Web Applications Using React and Redux");
-
-				document.write("<h4>What page am I on now: " + "<div style='color: red'>" + LearningReactData.whereNow + "</div>" + " / " + LearningReactData.howMany + "<br /></h4>");
+				
+				document.write("<h4>What page am I on now: " + "<div style='color: red'>" + LearningReactData.whereNow + "</div>" + " / " + LearningReactData.howMany + ". Pages to go: " + "<div style='color: red'>" + (LearningReactData.howMany - LearningReactData.whereNow) + "</div><br /></h4>");
 			</script>
-			
+
 		<img src="image/React.jpg" alt="Failed">
 		<div class="buttonPadding">
 			<div class="buttonStyle">
