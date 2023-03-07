@@ -7,9 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="Style/style.css">
 	<link rel="shortcut icon" href="https://xtaraztwilightforever.github.io/img/XtaraziC.ico" type="image/x-icon">
-	<script src="Scripts/main.js"></script>
-	<script src="Scripts/tables.js"></script>
 	<title>Learning JavaScript</title>
+	<script src="Scripts/Display_Buttons.js"></script>
+	<script src="Scripts/Display_Tables.js"></script>
 </head>
 
 <body>
@@ -133,11 +133,17 @@
 	<div class="React">
 		<h3>Study of the React:</h3>
 		<h4>3) Learning React: A Hands-On Guide to Building Web Applications Using React and Redux:</h4>
-		<h4>What page of the book I am on: <span class="bookPage"></span><b>/</b><span class="totalBookPage"></span> page.</h4> <img src="image/React.jpg" alt="Failed">
+			<script>
+				let LearningReactData = BooksReading.find(book => book.title === "Learning React: A Hands-On Guide to Building Web Applications Using React and Redux");
+
+				document.write("<h4>What page am I on now: " + "<div style='color: red'>" + LearningReactData.whereNow + "</div>" + " / " + LearningReactData.howMany + "<br /></h4>");
+			</script>
+			
+		<img src="image/React.jpg" alt="Failed">
 		<div class="buttonPadding">
 			<div class="buttonStyle">
 				<script>
-				for(let i = 26; i <= 28; i++) {
+				for(let i = 26; i <= 29; i++) {
 					displayButtons(i);
 				}
 				</script>
@@ -246,15 +252,11 @@
 		generateTable(JavaScriptSections);
 		</script>
 		<h4></h4> </center>
-	<div class="buttonPadding">
-		<div class="buttonStyle">
-			<button style="--clr:#FF44CC" onclick="saving_Information_User()"><span>Saving Information User</span><i></i></button>
-		</div>
-	</div>
-	<script src="Scripts/Saving_Information_User.js"></script>
-	<script>
-	document.querySelector('.bookPage').textContent = document.querySelector('.bookPages').textContent;
-	document.querySelector('.totalBookPage').textContent = document.querySelector('.totalBookPages').textContent;
-	</script>
+			<div class="buttonPadding">
+				<div class="buttonStyle">
+					<button style="--clr:#FF44CC" onclick="saving_Information_User()"><span>Saving Information User</span><i></i></button>
+				</div>
+			</div>
+			<script src="Scripts/Saving_Information_User.js"></script>
 </body>
 </html>
