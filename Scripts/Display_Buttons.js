@@ -184,6 +184,12 @@ function displayButtons(num) {
       link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/Lightning_Counter/index.html",
       style: "--clr:#FF5E00",
       text: "Lightning Counter"
+    },
+    {
+      num: 31,
+      link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/Clicker/index.html",
+      style: "--clr:#1436bc",
+      text: "Clicker"
     }
     ];
   
