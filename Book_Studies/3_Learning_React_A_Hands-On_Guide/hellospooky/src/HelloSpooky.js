@@ -1,5 +1,6 @@
 import React, {Component} from "react";
-
+import "./HelloSpooky.css";
+import "./index.css";
 class HelloSpooky extends Component {
     render() {
         return (
