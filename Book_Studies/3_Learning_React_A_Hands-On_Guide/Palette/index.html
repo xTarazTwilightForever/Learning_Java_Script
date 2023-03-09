@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Color Palette Card</title>
+    
+    <style>
+        #container {
+            padding: 50px;
+            background-color: #fff;
+        }
+        .colorSquare {
+            box-shadow: 0px 0px 25px 0px #333;
+            width: 242px;
+            height: 242px;
+            margin-bottom: 15px;
+        }
+        .colorArea input {
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+        }
+        .colorArea button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+            color: #fff;
+            background-color: #666;
+            border: 2px solid #666;
+        }
+        #colorHeading {
+            padding: 0;
+            margin: 50px;
+            margin-bottom: -20px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="colorHeading">Palette</h1>
+    <div id="container"></div>
+
+    <script type="text/babel">
+       class Colorizer extends React.Component {
+            constructor(props) {
+                super(props);
+
+                this.state = {
+                    color: "",
+                    bgColor: "white"
+                };
+            }
+
+            colorValue = (e) => {  
+                this.setState({
+                    color: e.target.value  
+                });
+            }
+
+            setNewColor = (e) => {
+                this.setState({
+                    bgColor: this.state.color
+                });
+
+                this._input.focus();
+                this._input.value = "";
+
+                e.preventDefault();
+            }
+
+            render() {
+                let squareStyle = {
+                    backgroundColor: this.state.bgColor
+                };
+
+                return (
+                    <div className="colorArea">
+                        <div style={squareStyle} className="colorSquare"></div>
+                        
+                        <form onSubmit={this.setNewColor}>
+                            <input onChange={this.colorValue} 
+                            ref={
+                                (el) => this._input = el
+                            }
+                            placeholder="Meaning of color"></input>
+                            <button type="submit">ok</button>    
+                        </form>
+                        <ColorLabel color={this.state.bgColor}/>
+                    </div>
+                );
+            }
+        }
+
+        let heading = document.querySelector("#colorHeading")
+        
+        class ColorLabel extends React.Component {
+            render() {
+                return ReactDOM.createPortal(
+                    ": " + this.props.color,
+                    heading
+                );
+            }
+        }
+
+        ReactDOM.render(
+            <div>
+                <Colorizer />    
+            </div>,
+            document.querySelector("#container")
+        );
+
+    </script>
+</body>
+</html>

@@ -190,6 +190,12 @@ function displayButtons(num) {
       link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/Clicker/index.html",
       style: "--clr:#1436bc",
       text: "Clicker"
+    },
+    {
+      num: 32,
+      link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/Palette/index.html",
+      style: "--clr:#7FFF00",
+      text: "Pallete"
     }
     ];
   
