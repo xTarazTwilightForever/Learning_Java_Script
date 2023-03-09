@@ -70,19 +70,19 @@
 		},
 		{
 			title: "Grokking algorithms",
-			whereNow: 0,
+			whereNow: 40,
 			howMany: 287,
-			progress: "Not started!"
+			progress: "In progress..."
 		},
 		{
 			title: "Learning React: A Hands-On Guide to Building Web Applications Using React and Redux",
-			whereNow: 226,
+			whereNow: 234,
 			howMany: 365,
 			progress: "In progress..."
 		},
 		{
 			title: "English, a large self-explanatory self-study",
-			whereNow: 18,
+			whereNow: 30,
 			howMany: 382,
 			progress: "In progress..."
 		}
