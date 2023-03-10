@@ -76,7 +76,7 @@
 		},
 		{
 			title: "Learning React: A Hands-On Guide to Building Web Applications Using React and Redux",
-			whereNow: 234,
+			whereNow: 245,
 			howMany: 365,
 			progress: "In progress..."
 		},
