@@ -85,7 +85,45 @@
 			whereNow: 30,
 			howMany: 382,
 			progress: "In progress..."
+		},
+		{
+			title: "Hacking, with examples, vulnerabilities, hacking, protection",
+			whereNow: 0,
+			howMany: 319,
+			progress: "Not started!"
+		},
+		{
+			title: "Linux, by examples, practice, practice and practice only.",
+			whereNow: 0,
+			howMany: 319,
+			progress: "Not started!"
+		},
+		{
+			title: "The ideal programmer, how to become a software development professional",
+			whereNow: 0,
+			howMany: 214,
+			progress: "Not started!"
+		},
+		{
+			title: "Self-programmer< how to learn how to program and get a job in ebay.",
+			whereNow: 0,
+			howMany: 207,
+			progress: "Not started!"
+		},
+		{
+			title: "Transformator, how to create your own business and start earning",
+			whereNow: 0,
+			howMany: 300,
+			progress: "Not started!"
+		},
+		{
+			title: "Communication genius and how to become one. ",
+			whereNow: 0,
+			howMany: 220,
+			progress: "Not started!"
 		}
+    
+    
 	];
 
     let ProgressReactJSfromZerotoPro = [
