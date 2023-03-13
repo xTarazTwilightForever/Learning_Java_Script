@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import MenuButton from "./MenuButton.js";
+import Menu from "./Menu.js";
 class MenuContainer extends Component {
     constructor (props) {
         super(props);
@@ -31,6 +32,8 @@ class MenuContainer extends Component {
         return (
             <div>
                 <MenuButton handleMouseDown={this.handleMouseDown}/>
+                <Menu handleMouseDown={this.handleMouseDown}
+                      menuVisibility={this.state.visible} />
                 <div>
                     <p>Find the item that is redundant here:</p>
                     <ul>
