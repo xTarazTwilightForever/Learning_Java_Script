@@ -214,6 +214,12 @@ function displayButtons(num) {
       link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/todolist/public/index.html",
       style: "--clr:#FFF01F",
       text: "todolist"
+    },
+    {
+      num: 36,
+      link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/slidemenu/public/index.html",
+      style: "--clr:#1436bc",
+      text: "SlideMenu"
     }
     
     ];
