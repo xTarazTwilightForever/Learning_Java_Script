@@ -208,6 +208,12 @@ function displayButtons(num) {
       link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/ipaddress/build/index.html",
       style: "--clr:#ECF0F1",
       text: "IP-Address"
+    },
+    {
+      num: 35,
+      link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/todolist/public/index.html",
+      style: "--clr:#FFF01F",
+      text: "todolist"
     }
     
     ];
