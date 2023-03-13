@@ -211,7 +211,7 @@ function displayButtons(num) {
     },
     {
       num: 35,
-      link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/todolist/public/index.html",
+      link: "Book_Studies/3_Learning_React_A_Hands-On_Guide/todolistnew/public/index.html",
       style: "--clr:#FFF01F",
       text: "todolist"
     },
