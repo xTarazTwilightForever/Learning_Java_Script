@@ -118,9 +118,9 @@
 		},
 		{
 			title: "Communication genius and how to become one. ",
-			whereNow: 0,
+			whereNow: 30,
 			howMany: 220,
-			progress: "Not started!"
+			progress: "In progress..."
 		},
 		{
 			title: "Sql in 10 minutes ben fort",
