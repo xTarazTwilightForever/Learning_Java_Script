@@ -76,7 +76,7 @@
 		},
 		{
 			title: "Learning React: A Hands-On Guide to Building Web Applications Using React and Redux",
-			whereNow: 289,
+			whereNow: 304,
 			howMany: 365,
 			progress: "In progress..."
 		},
@@ -127,10 +127,13 @@
 			whereNow: 0,
 			howMany: 348,
 			progress: "Not started!"
+		},
+		{
+			title: "Cloud Native Programming. Docker and Kubernetes microservices.",
+			whereNow: 0,
+			howMany: 244,
+			progress: "Not started!"
 		}
-    
-    
-    
 	];
 
     let ProgressReactJSfromZerotoPro = [
